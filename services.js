@@ -1,5 +1,5 @@
 // SERVICES
-socialApp.service('friendsService', function() {
+socialApp.service('busService', function() {
    
     this.friendName = "Renuka Tyagi";
     this.userAge=27;

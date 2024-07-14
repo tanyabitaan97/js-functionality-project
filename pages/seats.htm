@@ -1,0 +1,23 @@
+<table class="table table-striped" style="border:1px solid;font-size:15px;">
+    <thead style="border:1px solid;">
+      <tr style="border:1px solid;">
+        <th scope="col" style="border-right:1px solid;width:200px;">Bus Name</th>
+        <th scope="col" style="border-right:1px solid;width:200px;">Dept. Time</th>
+        <th scope="col" style="border-right:1px solid;width:200px;">Coach Type</th>
+        <th scope="col" style="border-right:1px solid;width:200px;">Seats Available</th>
+        <th scope="col" style="border-right:1px solid;width:200px;">Fare</th>
+        <th scope="col" style="border-right:1px solid;width:200px;"></th>
+      </tr>
+    </thead>
+
+        <tr ng-repeat="u in busList" style="border:1px solid;">
+            <td>{{u.busName}}</td>
+            <td>{{u.departureTime}}</td>
+            <td>{{u.coachType}}</td>
+            <td>{{u.seatsAvailable}}</td>
+            <td>{{u.fare}}</td>
+            <td><a href="#/selectSeats"><button type="button" class="btn btn-danger" ng-click="viewSeats(u.busName,u.coachType)">
+              <span style="font-size:15px;">View Seats</span></button></a></td>
+        </tr>
+
+    </table>

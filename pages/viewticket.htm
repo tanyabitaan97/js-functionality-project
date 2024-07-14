@@ -1,0 +1,89 @@
+<div style="width:500px;display: contents;">
+    <h5 style="display:flex;justify-content: center;">Online Reservation</h5>
+    <br>
+    <div style="display: flex;justify-content: space-between;background-color: bisque;padding:15px;">
+    <div>
+        {{leavingFrom}} {{goingTo}}
+    </div>
+    <div>
+        {{date}}
+    </div>
+</div>
+<br>
+
+    <table class="table" style="border:1px solid;font-size:15px;">
+        <thead>
+          <tr>
+            <th scope="col" style="width:200px;">Passenger Details</th>
+            <th scope="col" style="width:200px;">Ticket Id</th>
+            <th scope="col" style="width:200px;">Seat No</th>
+            <th scope="col" style="width:200px;">Total Fare</th>
+          </tr>
+        </thead>
+    
+    
+           <tr>
+            <td style="display:block;">
+               <span>{{userName}}</span> 
+               <div style="display: block;">
+               <p>
+                {{userMobileNo}}
+            </p>
+            <p> {{email}}</p>
+        </div>
+               
+            
+            </td>
+            <td>
+                -LyWrKla_RCNQ7-Ed4-u
+            </td>
+            <td>
+                {{seatNo}}
+            </td>
+            <td>
+                {{totalFare}}
+            </td>
+           </tr>
+    
+        </table>
+
+        <br>
+
+        <table class="table" style="border:1px solid;font-size:15px;">
+            <thead>
+              <tr>
+                <th scope="col" style="width:200px;">Bus Name</th>
+                <th scope="col" style="width:200px;">Reporting Time</th>
+                <th scope="col" style="width:200px;">Departure Time</th>
+              </tr>
+            </thead>
+        
+        
+               <tr>
+                <td style="display:block;">
+                   <span>{{busName}}</span> 
+                   <div style="display: block;">
+                   <p>
+                    Coach Type:{{coachType}}
+                </p>
+               
+            </div>
+                   
+                
+                </td>
+                <td>
+                    Before 30 Mins
+                </td>
+                <td>
+                    {{time}}
+                </td>
+               </tr>
+        
+            </table>
+
+            <div>
+                <span style="color: red;display: flex;justify-content: center;">**Please bring this copy to ticket counter for collect your ticket</span>
+            </div>
+
+
+</div>

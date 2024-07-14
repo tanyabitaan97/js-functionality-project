@@ -1,12 +1,24 @@
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
-        <h4>User details</h4>
-        <div class="form-group">
-            <input type="text" ng-model="friendName" class="form-control" />
-            <input type="text" ng-model="userAge" class="form-control" />
-            <input type="text" ng-model="userName" class="form-control" />
-            <button type="button" class="btn btn-primary" style="display:flex;float:right;" ng-click="updateDetails()">Update</button>
+        <div class="form-group" style="border:1px solid;">
+            <div style="margin:20px;">
+            
+            <div style="display:flex;justify-content: space-around;">
+                <span>Leaving From</span>
+                <span>Going To</span>
+                </div>
+                <div style="display:flex;">
+            <input type="text" ng-model="leavingFrom" class="form-control" placeholder="Select Place"/>
+           
+            <input type="text" ng-model="goingTo" class="form-control" style="margin-left:10px;" />
+            <br><br>
         </div>
-       
+            <span>Departing On</span>
+            <input type="date" ng-model="departingOn" class="form-control" />
+            <br><br>
+         <a href="#/viewseats">  <button type="button" class="btn btn-primary" class="btn btn-primary" 
+             ng-click="searchBuses()" style="margin-left:200px;" >Search Buses</button></a> 
+        </div>
+    </div>
     </div>
 </div>
